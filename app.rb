@@ -20,14 +20,14 @@ end
 # returns a HTML form for creating a new source
 
 get "/Pets/new" do
-  "get new pet form"
+  "gets and displays a form to input"
 end
  # third route
  # HTTP Verb = POST
  # Controller Action = create
  # to create a new ressource
 post '/Pets' do
-  "adding a new pet"
+  "adding a new pet and adds to the list"
 end
  # fourth route
  # HTTP Verb = GET
@@ -35,7 +35,7 @@ end
  # to display a specific resource
 get '/Pets/:id' do
   id = params[:id]
-  "get a single Pet #{id}"
+  "get a single Pet and displays with id #{id}"
 end
 
 # fifth route
@@ -53,7 +53,7 @@ end
 # to update a specific resource
 put '/Pets/:id' do
   id = params[:id]
-  "updates a pet #{id}"
+  "updates a pet with the id: #{id}"
 end
 
 # seventh route
@@ -62,5 +62,5 @@ end
 # to delete a specific resource
 delete '/Pets/:id' do
   id = params[:id]
-  "delete a pet #{id}"
+  "delete a pet with the id: #{id}"
 end
